@@ -1,7 +1,2 @@
-const persona = {
-  nombre: 'Tony',
-  apellido: 'Stark',
-  edad: 45,
-}
-
-console.log(persona);
+// 07 - Desestructuracion de arrays
+console.log('07 - Desestructuracion de arrays');
