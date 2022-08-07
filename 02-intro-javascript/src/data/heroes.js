@@ -1,3 +1,5 @@
+// export const heroes = [
+// EXPORT POR DEFECTO
 export const heroes = [
     {
         id: 1,
@@ -25,3 +27,12 @@ export const heroes = [
         owner: 'Marvel'
     },
 ];
+
+// export const owners = ['DC', 'MARVEL']
+const owners = ['DC', 'MARVEL']
+
+// export default heroes;
+export {
+    heroes as default,
+    owners
+}
