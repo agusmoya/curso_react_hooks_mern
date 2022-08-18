@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { AddCategory } from "./components/AddCategory";
-import { GifGrid } from "./components/GifGrid";
+import { useState } from "react";
+// import { AddCategory } from "./components/AddCategory";
+// import { GifGrid } from "./components/GifGrid";
+import { AddCategory, GifGrid } from "./components";
 
 const GiffExpertApp = () => {
   const [categories, setCategories] = useState(["One Punch"]);
 
   const onAddCategory = (newCategory) => {
     let flag = false;
-    // console.log("Agrego Categoría nueva: ", newCategory);
     categories.map((cat) => {
       flag = false;
       console.log(cat);
@@ -20,7 +20,7 @@ const GiffExpertApp = () => {
       return;
     }
 
-    setCategories([...categories, newCategory]);
+    setCategories([newCategory, ...categories]);
     // ==
     // setCategories((cat) => [...cat, newCategory]);
   };
